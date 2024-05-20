@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Monitoramento - TecSidel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+    </div>
+    <div class="logo">
+        <img src="/assets/tecsidel_logo.jpeg" alt="Logo TecSidel">
+    </div>
+    <div class="menu-btn hidden"></div>
+</header>
+    <main class="dashboard">
+        <aside class="equipment-status">
+            <h2>Status dos Equipamentos</h2>
+            <div id="equipamentos"></div>
+        </aside>
+        <section class="vehicle-info">
+            <h2>Veículos Monitorados</h2>
+            <div id="veiculos"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

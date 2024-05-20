@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #ECEFF1;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #003366;
+    color: white;
+  }
+  
+  .menu-btn {
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .menu-btn__burger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  
+  .hidden {
+    visibility: hidden; 
+  }
+  
+  .logo img {
+    height: 50px;  
+  }
+  
+  .logo {
+    flex-grow: 1;
+    text-align: center; 
+  }
+  
+  .dashboard {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .equipment-status, .vehicle-info {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .equipment-status {
+    width: 30%;
+  }
+  
+  .vehicle-info {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .equipment, .vehicle {
+    padding: 10px;
+    background: linear-gradient(145deg, #f6f6f6, #ffffff);
+    box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #fff;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+  
+  .status-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .status-dot.active {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .status-dot.inactive {
+    background-color: #F44336; /* Red */
+  }
+  
+  .vehicle {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vehicle img {
+    width: 200px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .vehicle-details {
+    flex-grow: 1; 
+  }
